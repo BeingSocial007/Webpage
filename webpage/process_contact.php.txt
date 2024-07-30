@@ -1,0 +1,25 @@
+<?php
+// Database connection
+include('includes/db.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $message = trim($_POST['message']);
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo 'Invalid email format.';
+        exit;
+    }
+
+    // Save to database
+    $stmt = $pdo->prepare("INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)");
+    if ($stmt->execute([$name, $email, $message])) {
+        echo 'Message sent successfully!';
+    } else {
+        echo 'Failed to send message.';
+    }
+} else {
+    echo 'Invalid request method.';
+}
+?>

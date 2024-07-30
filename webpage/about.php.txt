@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - John Doe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <?php include('includes/header.php'); ?>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am John Doe, an IT Engineer with a passion for developing innovative solutions and learning new technologies. With experience in web development and software engineering, I am dedicated to delivering high-quality projects and continuously improving my skills.</p>
+        </section>
+    </main>
+
+    <?php include('includes/footer.php'); ?>
+</body>
+</html>

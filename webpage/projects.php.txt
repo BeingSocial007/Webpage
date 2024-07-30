@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - John Doe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <?php include('includes/header.php'); ?>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+    </main>
+
+    <?php include('includes/footer.php'); ?>
+</body>
+</html>
